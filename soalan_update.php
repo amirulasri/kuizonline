@@ -12,7 +12,7 @@
     $sql = "update soalan set namasoalan = '$namasoalan', pilihana = '$pilihana', pilihanb = '$pilihanb', pilihanc = '$pilihanc', jawapan = '$jawapan',  idguru = '$idguru' where idsoalan = '$idsoalan' ";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya kemaskini";
+        echo "<script>alert('Soalan berjaya dikemaskini'); window.location='soalan_update.html';</script>";
     else
-        echo "tidak berjaya kemaskini";
+        echo "<script>alert('Gagal mengemaskini soalan'); window.location='soalan_update.html';</script>";
 ?>

@@ -6,7 +6,7 @@
     $sql = "delete from soalan where idsoalan = '$idsoalan' ";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya padam";
+        echo "<script>alert('Soalan berjaya dipadamkan'); window.location='soalan_delete.html';</script>";
     else
-        echo "tidak berjaya padam";
+        echo "<script>alert('Gagal memadam soalan'); window.location='soalan_delete.html';</script>";
 ?>

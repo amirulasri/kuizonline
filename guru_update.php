@@ -9,7 +9,7 @@
 
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya kemaskini";
+        echo "<script>alert('Guru berjaya dikemaskini'); window.location='guru_update.html';</script>";
     else
-        echo "tidak berjaya kemaskini";
+        echo "<script>alert('Guru gagal kemaskini'); window.location='guru_update.html';</script>";
 ?>

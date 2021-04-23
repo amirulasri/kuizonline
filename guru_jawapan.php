@@ -5,7 +5,7 @@
     $sql = "delete from kuiz where idpelajar = '$idpelajar' ";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya padam rekod";
+        echo "<script>alert('Rekod berjaya dipadam'); window.location='guru_jawapan.html';</script>";
     else
-        echo "tidak berjaya padam";
+        echo "<script>alert('Gagal memadam rekod'); window.location='guru_jawapan.html';</script>";
 ?>

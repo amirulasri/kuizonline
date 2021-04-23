@@ -15,7 +15,7 @@
 
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya tambah";
+        echo "<script>alert('Soalan berjaya ditambah'); window.location='soalan_insert.html';</script>";
     else
-        echo "tidak berjaya tambah";
+        echo "<script>alert('Gagal menambah soalan'); window.location='soalan_insert.html';</script>";
 ?>

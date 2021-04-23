@@ -5,7 +5,7 @@
     $sql = "delete from guru where idguru = '$idguru' ";
     $result = mysqli_query( $sambungan, $sql );
     if ( $result == true )
-        echo "berjaya padam";
+        echo "<script>alert('Guru berjaya dipadam'); window.location='guru_delete.html';</script>";
     else
-        echo "tidak berjaya padam";
+        echo "<script>alert('Gagal memadam guru'); window.location='guru_delete.html';</script>";
 ?>

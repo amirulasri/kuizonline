@@ -6,7 +6,7 @@
     $sql = "delete from kelas where idkelas = '$idkelas' ";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya padam";
+        echo "<script>alert('Kelas berjaya dipadam'); window.location='kelas_delete.html';</script>";
     else
-        echo "tidak berjaya padam";
+        echo "<script>alert('Gagal memadam kelas'); window.location='kelas_delete.html';</script>";
 ?>

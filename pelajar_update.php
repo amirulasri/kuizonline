@@ -11,7 +11,7 @@
     $result = mysqli_query($sambungan, $sql);
 
     if ($result == true)
-        echo "berjaya kemaskini";
+        echo "<script>alert('Pelajar berjaya dikemaskini'); window.location='pelajar_update.html';</script>";
     else
-        echo "tidak berjaya kemaskini";
+        echo "<script>alert('Gagal mengemaskini pelajar'); window.location='pelajar_update.html';</script>";
 ?>

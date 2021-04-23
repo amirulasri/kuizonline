@@ -10,7 +10,7 @@
 
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya tambah";
+        echo "<script>alert('Kelas berjaya ditambah'); window.location='kelas_insert.html';</script>";
     else
-        echo "tidak berjaya tambah";
+        echo "<script>alert('Gagal memadam kelas'); window.location='kelas_insert.html';</script>";
 ?>

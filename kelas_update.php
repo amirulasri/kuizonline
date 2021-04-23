@@ -8,7 +8,7 @@
 
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-        echo "berjaya kemaskini";
+        echo "<script>alert('Kelas berjaya dikemaskini'); window.location='kelas_update.html';</script>";
     else
-        echo "tidak berjaya kemaskini";
+        echo "<script>alert('Gagal mengemaskini kelas'); window.location='kelas_update.html';</script>";
 ?>
