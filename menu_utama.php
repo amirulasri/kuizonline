@@ -19,7 +19,7 @@
       <li><a href='menu_soalan.html' target=menu>Soalan</a></li>
       <li><a href='laporan_pilihan.php' target=kandungan>Laporan</a></li>
       <li><a href='import.html' target=kandungan>Import</a></li>
-      <li><a href='logout.php' target='_top'>Keluar</a></li>
+      <li><a href='logout.php' onclick='return confirm(\"Adakah anda pasti ingin mengelog keluar?\")' target='_top'>Keluar</a></li>
     </ul>
     </div> ";
 
@@ -29,7 +29,7 @@
       <li><a href='home.html' target=kandungan>Home</a></li>
       <li><a href='jawab_mula.php' 
       target=kandungan>Soalan</a></li>
-      <li><a href='logout.php' target='_top'>Keluar</a></li>
+      <li><a href='logout.php' onclick='return confirm(\"Adakah anda pasti ingin mengelog keluar?\")' target='_top'>Keluar</a></li>
     </ul>
     </div> ";
 ?>
