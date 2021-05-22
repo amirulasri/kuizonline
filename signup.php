@@ -43,16 +43,16 @@ $idakhirbaru = 'P'.$stringidmurid;
     <table>
         <tr>
             <td>ID Pelajar</td>
-            <td><input type="text" name="idpelajar" value="<?php echo $idakhirbaru; ?>" placeholder="P001  max 4 char"></td>
+            <td><input type="text" name="idpelajar" value="<?php echo $idakhirbaru; ?>" placeholder="P001  max 4 char" required></td>
         </tr>
         <tr>
             <td>Nama</td>
-            <td><input type="text" name="namapelajar"></td>        
+            <td><input type="text" name="namapelajar" required></td>        
         </tr>
         <tr>
             <td>Kelas</td>
             <td>
-            <select name="idkelas">
+            <select name="idkelas" required>
             <?php
             $sql = "select * from kelas";
             $data = mysqli_query($sambungan, $sql);
@@ -65,7 +65,7 @@ $idakhirbaru = 'P'.$stringidmurid;
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="password" name="password" placeholder="max: 8 char"></td>
+            <td><input type="password" name="password" placeholder="max: 8 char" required></td>
         </tr>
     </table>
     <button class="tambah" type="submit" onclick="return periksakatalaluan(document.borangdaftar.password,8,8)">Daftar</button>
