@@ -44,5 +44,5 @@ $idguru = $_GET['idguru'];
         </tr>
     </table>
     <button class="update" type="submit">Update</button>
-    <a href="guru_pilih_soalan.php" target="kandungan">Atau Pilih Dari Soalan</a>
+    <a href="guru_pilih_soalan.php?pilihan=update" target="kandungan">Atau Pilih Dari Soalan</a>
 </form>

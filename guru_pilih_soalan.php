@@ -30,7 +30,7 @@
             <?php
             if($jenispilihan == 'update'){
             ?>
-            <a href="soalan_update2.php?idsoalan=<?php echo $soalan['idsoalan'] ?>&soalan=<?php echo $soalan['namasoalan'] ?>&pilihana=<?php echo $soalan['pilihana'] ?>&pilihanb=<?php echo $soalan['pilihanb'] ?>&pilihanc=<?php echo $soalan['pilihanc'] ?>&jawapan=<?php echo $soalan['jawapan'] ?>&idguru=<?php echo $soalan['idguru'] ?>" target="kandungan">Pilih Soalan</a>
+            <a href="soalan_update2.php?idsoalan=<?php echo $soalan['idsoalan'] ?>&soalan=<?php echo str_replace("+","%2b",$soalan['namasoalan']); ?>&pilihana=<?php echo $soalan['pilihana'] ?>&pilihanb=<?php echo $soalan['pilihanb'] ?>&pilihanc=<?php echo $soalan['pilihanc'] ?>&jawapan=<?php echo $soalan['jawapan'] ?>&idguru=<?php echo $soalan['idguru'] ?>" target="kandungan">Pilih Soalan</a>
             <?php }elseif($jenispilihan == 'delete'){ ?>
             <a href="soalan_delete.php?idsoalan=<?php echo $soalan['idsoalan'] ?>" onclick="return confirm('Adakah anda pasti ingin memadam soalan ini?')">Padam</a>
                 <?php } ?>
