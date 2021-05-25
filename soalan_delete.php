@@ -1,7 +1,12 @@
 <?php
     include("sambungan.php");
 
-    $idsoalan = $_POST["idsoalan"];
+    $idsoalan = "";
+    if(isset($_POST['idsoalan'])){
+        $idsoalan = $_POST['idsoalan'];
+    }elseif(isset($_GET['idsoalan'])){
+        $idsoalan = $_GET['idsoalan'];
+    }
 
     $sql = "delete from soalan where idsoalan = '$idsoalan' ";
     $result = mysqli_query($sambungan, $sql);
