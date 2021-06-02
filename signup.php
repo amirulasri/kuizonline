@@ -23,6 +23,13 @@ $buangpid = substr($idmuridkini,1);
 //TAMBAH 1 PADA ID YANG SEDIA ADA
 $murididbaru = $buangpid+1;
 
+//JIKA TAK CUKUP 3 DIGIT, TAMBAH 00
+if(strlen((string)$murididbaru) <= 1){
+    $murididbaru = '00'.$murididbaru;
+}elseif(strlen((string)$murididbaru) <= 2){
+    $murididbaru = '0'.$murididbaru;
+}
+
 //TUKARKAN INTEGER KEPADA STRING
 $stringidmurid = strval($murididbaru);
 
